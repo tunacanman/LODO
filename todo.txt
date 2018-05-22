@@ -1,0 +1,3 @@
+Mobile menu: tapping away from drop down menu closes it
+
+Mobile menu: bar item button clicking bounds are off-center?
