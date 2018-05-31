@@ -12,7 +12,7 @@
 }
 html, body {
     /*font-family: "Lucida Sans", sans-serif;*/
-    font-family: 'Andika';font-size: 22px;
+    font-family: 'Andika';font-size: 16px;
 }
 /*
 .header {
@@ -91,10 +91,43 @@ html, body {
 /*@media only screen and (min-width: 1200px) {...}*/
 
 #navTransparentClickAwayArea {width: 100%;height: 100vh;opacity: 0;}
-.lodo-red {color: #fff;background-color: #de1426;}
-#navLogo{float: left;height:33px;}
-#navLogoContainer{padding-right: 0!important;}
+.lodo-red {color: #fff;background-color: rgb(166, 10, 10);font-size: 18px} /*#de1426*/
+.lodo-red a{padding-top: 8px!important;padding-bottom: 8px!important;}
+#navLogo{float: left;height:27px;}
+#navLogoContainer{padding-right: 0!important;/*padding-top: 4px;padding-bottom: 0px;*/}
+#mainImageContainer{margin-top: 43px;/*width: 100%;*/width: 100vw;height:50vw; /*padding-bottom: 50%; height: 506px;*/ background-image: url('../images/staff-original.jpg');background-size: 100%;background-repeat: no-repeat;position: relative;z-index: -2;background-position: right bottom;}
+#mainImageContainer:after{
+  content: " ";
+  z-index: -1;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-device-width: 768px) {
+    #mainImageContainer { 
+        background-image: url('../images/random/dog-grass-run_bottomcrop.jpg'); 
+    }
+}
+@media only screen and (min-device-width: 1360px) {
+  #mainImageContainer { height: 80vh; }
+}
+/*@media only screen and (min-device-width: 370px) {
+  #mainImageContainer { width: 100vw;height:50vw; }
+}*/
+#mainSlogan{text-align: center;color: #fff;z-index: 0;position: relative;top: 32px; font-family: 'Andika'; font-weight: 700; font-size: 20px; letter-spacing: 8px;}
+@media only screen and (min-device-width: 768px) {
+  #mainSlogan{top: 50px; font-size: 40px; letter-spacing: 8px;}
+}
+@media only screen and (min-device-width: 1366px) {
+  #mainSlogan{top: 75px; font-size: 60px; letter-spacing: 8px;}
+}
 
+.card {box-shadow:0 2px 5px 0 rgba(250,250,250,0.26),0 2px 10px 0 rgba(250,250,250,0.22)}
+.button:hover{color:#fff!important;background-color:rgb(110,10,10)!important;}
 /* w3.css */
 /*
 .w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}
