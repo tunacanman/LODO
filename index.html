@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>Live Oak Dog Obedience</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Krub:400,500,600,700|Montserrat:400,500,600|Noto+Sans+KR|KoHo|Roboto+Slab" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- FullCalendar -->
+	<link href='css/fullcalendar.min.css' rel='stylesheet' />
+	<link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+
+	<!-- qTip2 -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/qtip2/3.0.3/basic/jquery.qtip.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/qtip-overrides.css">
+
+	<link href="css/jquery-ui.theme.css" rel="stylesheet" />
+	<script src='js/moment.min.js'></script>
+	<!-- <script src='../lib/jquery.min.js'></script> -->
+	<script src='js/fullcalendar.min.js'></script>
+	<script>
+
+	$(document).ready(function() {
+
+		$('#calendar').fullCalendar({
+		themeSystem: 'jquery-ui',
+		defaultDate: '2019-01-12',
+		editable: false,
+		eventLimit: true, // allow "more" link when too many events
+		events: [
+			{
+			title: 'Beg. Obedience',
+			color: '#007B7B',
+			start: '2019-01-01T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Intermediate',
+			color: '#00A000',
+			start: '2019-01-01T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Puppy',
+			color: '#CD5D00',
+			start: '2019-01-01T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Tricks',
+			color: '#C10000',
+			start: '2019-01-01T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Advanced',
+			color: '#CDCD00',
+			start: '2019-01-02T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Social',
+			color: '#5B0789',
+			start: '2019-01-02T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Clicker',
+			color: '#16168F',
+			start: '2019-01-02T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Annual Fun',
+			color: '#B70037',
+			start: '2019-01-02T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'CGC',
+			color: '#53B700',
+			start: '2019-01-03T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Ask',
+			color: '#CD9A00',
+			start: '2019-01-03T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Flyball',
+			color: '#009633',
+			start: '2019-01-03T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Open Obedience',
+			color: '#CD2000',
+			start: '2019-01-03T16:30:00',
+			url: '#',
+			description: '<b>Class: </b>Beginning Obedience<br /> \
+						<b>Length: </b>6 weeks'
+			},
+			{
+			title: 'Long Event',
+			start: '2019-01-07',
+			end: '2019-01-10'
+			},
+			{
+			id: 999,
+			title: 'Repeating Event',
+			start: '2019-01-09T16:00:00'
+			},
+			{
+			id: 999,
+			title: 'Repeating Event',
+			start: '2019-01-16T16:00:00'
+			},
+			{
+			title: 'Conference',
+			start: '2019-01-11',
+			end: '2019-01-13'
+			},
+			{
+			title: 'Meeting',
+			start: '2019-01-12T10:30:00',
+			end: '2019-01-12T12:30:00'
+			},
+			{
+			title: 'Lunch',
+			start: '2019-01-12T12:00:00'
+			},
+			{
+			title: 'Meeting',
+			start: '2019-01-12T14:30:00'
+			},
+			{
+			title: 'Happy Hour',
+			start: '2019-01-12T17:30:00'
+			},
+			{
+			title: 'Dinner',
+			start: '2019-01-12T20:00:00'
+			},
+			{
+			title: 'Birthday Party',
+			start: '2019-01-13T07:00:00'
+			},
+			{
+			title: 'Click for Google',
+			url: 'http://google.com/',
+			start: '2019-01-28'
+			}
+		],
+		eventRender: function(event, element) {
+			element.qtip({
+			content: event.description
+			});
+		}
+		});
+
+	});
+
+	</script>
+
+	<!-- scroll magic -->
+	<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+
+	<!-- qTip2 -->
+	<script src="https://cdn.jsdelivr.net/qtip2/3.0.3/basic/jquery.qtip.min.js"></script>
+	
+
+	<!-- Navbar fade in -->
+	<!--
+	<script>
+		$(document).ready(function(){
+			$(document).scroll(function () {
+				var scroll = $(this).scrollTop();
+				if (scroll > 150) {
+					$("nav").css("visibility", "visible");
+					$("nav").fadeIn();
+				} else {
+					$("nav").fadeOut();
+				}
+			});
+		});
+		$("nav").hide()
+		
+		$(document).ready(function(){
+			element = document.getElementById("map-marker-transition");
+			var reset = 1;
+			$(document).scroll(function () {
+				var scroll = $(this).scrollTop();
+				if (scroll > 650 && reset == 1) {
+
+
+					
+					// -> removing the class
+					element.classList.remove("animated-boing");
+					
+					// -> triggering reflow /* The actual magic */
+					// without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+					// Oops! This won't work in strict mode. Thanks Felis Phasma!
+					// element.offsetWidth = element.offsetWidth;
+					// Do this instead:
+					void element.offsetWidth;
+					
+					// -> and re-adding the class
+					element.classList.add("animated-boing");
+
+					reset = 0;
+				}
+				if (scroll < 300) {
+					reset = 1;
+				}
+			});
+		});
+	</script>
+	-->
+
+</head>
+<body>
+
+	<nav>
+		<img class="splash-logo" src="images/lodo-dog-rt.svg" alt="logo of playful dog"></img>
+		<ul>
+			<a class="active" href="#"><li>HOME</li></a>
+			<a href="classes.html"><li>CLASSES</li></a>
+			<a href="schedule.html"><li>SCHEDULE</li></a>
+		</ul>
+		<div>
+			<h6>Live&nbsp;Oak Dog&nbsp;Obedience</h6>
+		</div>
+		<ul>
+			<a href="about.html"><li>ABOUT</li></a>
+			<a href="contact.html"><li>CONTACT</li></a>
+		</ul>
+		<img class="splash-logo" src="images/lodo-dog-rt.svg" alt="logo of playful dog">
+	</nav>
+	
+	<div class="splash">
+		<div class="splash-child"></div>
+	</div>
+
+	<div class="section-slogan">
+		<div class="slogan-box1">
+			<h3>
+				<img src="images/dog-treat-quote2s-lighter.png">
+				Training&nbsp<span>You</span>&nbspto&nbsptrain&nbspyour&nbspdog so&nbspthey&nbsplisten&nbspto&nbsp<span>You</span>,&nbspnot&nbspus!
+				<img src="images/dog-treat-quote2s-lighter.png">
+			</h3>
+		</div>
+		<div class="slogan-box2"></div>
+	</div>
+
+	<div id="map-marker-container">
+		<div id="map-marker-transition" class="animated-boing">
+			<img width="65px" src="images/map-marker-alt-solid-red-innerFill.svg" alt="map marker">
+		</div>
+	</div>
+
+	<!-- container for overflow -->
+	<div id="section-location-container"> 
+		<div class="section-location">
+			<div>
+				<h3>CLASSES LOCATED IN</h3>
+			</div>
+			<div id="glendora" class="location">
+				<img width="36px" src="images/map-marker-alt-solid-red.svg" alt="map marker">
+				<h6>Glendora</h6>
+			</div>
+			<div id="alta-loma" class="location">
+				<img width="36px" src="images/map-marker-alt-solid-red.svg" alt="map marker">
+				<h6>Alta Loma</h6>
+			</div>
+			<div id="la-verne" class="location">
+				<img width="36px" src="images/map-marker-alt-solid-red.svg" alt="map marker">
+				<h6>La Verne</h6>
+			</div>
+			<div id="claremont" class="location">
+				<img width="36px" src="images/map-marker-alt-solid-red.svg" alt="map marker">
+				<h6>Claremont</h6>
+			</div>
+			<div id="montclair" class="location">
+				<img width="36px" src="images/map-marker-alt-solid-red.svg" alt="map marker">
+				<h6>Montclair</h6>
+			</div>
+			<div id="upland" class="location">
+				<img width="36px" src="images/map-marker-alt-solid-red.svg" alt="map marker">
+				<h6>Upland</h6>
+			</div>
+			<div id="ranchocuca" class="location">
+				<img width="36px" src="images/map-marker-alt-solid-red.svg" alt="map marker">
+				<h6>Rancho <br>Cucamonga</h6>
+			</div>
+			<div id="diamond-bar" class="location">
+				<img width="36px" src="images/map-marker-alt-solid-red.svg" alt="map marker">
+				<h6>Diamond Bar</h6>
+			</div>
+		</div>
+	</div>
+
+	<div class="section-classes">
+		<div class="grid-classes">
+			<!-- <div id="grid-firstCol"></div> -->
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Puppy&nbspPre&nbspSchool & Socialization</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Beginning Novice</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Intermediate</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Tricks for Dogs</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Advanced</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Clicker Training</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Flyball</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Social Graces</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Canine Good Citizenship Testing (CGC)</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Open Obedience</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Annual Canine Fun Day</div></a>
+			<a href="#"><div><div class="grid-classes-icon" alt="dog icon"></div>Ask The Behaviorist/Trainer Workshop</div></a>
+			<!-- <div id="grid-lastCol"></div> -->
+		</div>
+		<a class="button" href="#classes">Classes & Events</a>
+	</div>
+
+	<div class="section-welcomed">
+		<div class="welcomed">
+			<h3>A well-trained, socialized dog is welcomed almost anywhere!</h3>
+		</div>
+	</div>
+
+	<div class="committed">
+		<!-- <img src="images/doberman_pinscher-cutout-v8-leaves-bright.png"> -->
+		<div class="column">
+			<h3>Committed to helping <br><span>each & every client</span> <br>to our fullest extent.</h3>
+			<a class="button" href="#about">About Us</a>
+		</div>
+		<!-- <img src="images/doberman_pinscher-cutout-v8-leaves-bright.png"> -->
+	</div>
+
+	<div class="section-collage">
+	</div>
+
+	<div class="section-schedule">
+		<a class="button" href="#schedule">Schedule</a>
+		<div id="calendar"></div>
+	</div>
+
+	<div class="section-footer">
+		<!-- <img class="footerA" width="680px" height="510px" src="images/footer.jpg"> -->
+		<div class="footerA">
+
+		</div>
+		<div class="footerB">
+			<!-- <h2>Call Us!</h2> -->
+			<h4><span>Maya Quintero</span> 
+				<br>Professional Trainer & Behaviorist</h4>
+			<h3>(626) 852 9992</h3>
+			<a href="facebook.com"><img width="75px" src="images/facebook-blue.svg" alt="facebook logo"></a>
+			<p>Website by Austin Blodgett</p>
+		</div>
+	</div>
+
+</body>
+
+<script>
+	
+		// retrieve the element
+		element = document.getElementById("map-marker-transition");
+
+		// reset the transition by...
+		element.addEventListener("click", function(e) {
+		e.preventDefault;
+		
+		// -> removing the class
+		element.classList.remove("animated-boing");
+		
+		// -> triggering reflow /* The actual magic */
+		// without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+		// Oops! This won't work in strict mode. Thanks Felis Phasma!
+		// element.offsetWidth = element.offsetWidth;
+		// Do this instead:
+		void element.offsetWidth;
+		
+		// -> and re-adding the class
+		element.classList.add("animated-boing");
+		}, false);
+</script>
+
+</html>
