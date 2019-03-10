@@ -1,7 +1,0 @@
-
-Mobile menu: bar item button clicking bounds are off-center?
-
-Add thin vertical line spacers between nav bar items
-
-.:: Done ::.
-* Mobile menu: tapping away from drop down menu closes it
