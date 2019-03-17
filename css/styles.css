@@ -1,3 +1,8 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,7 +15,7 @@ nav {
   width: 100%;
   background-color: #8B1616;
   border-top: 3px solid #414141;
-  height: 39px;
+  height: 42px;
 }
 
 nav img {
@@ -206,8 +211,8 @@ h2, h3 {
   border-top: 2px solid #B7B7B7;
   border-bottom: 2px solid #B7B7B7;
   position: relative;
-  max-width: 800px;
-  min-width: 550px;
+  max-width: 860px;
+  min-width: 610px;
 }
 
 .slogan-box1 span {
@@ -480,7 +485,7 @@ h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 283px;
+  width: 293px;
   height: 69px;
   margin-left: 20px;
   margin-top: 20px;
@@ -508,7 +513,7 @@ h2, h3 {
   font-weight: 700;
   letter-spacing: 3px;
   text-decoration: none;
-  width: 210px;
+  width: 318px;
   text-align: center;
   margin: 45px auto;
   display: block;
@@ -560,7 +565,7 @@ h2, h3 {
   -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.4);
           box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.4);
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .committed {
