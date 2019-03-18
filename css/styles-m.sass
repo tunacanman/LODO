@@ -18,23 +18,37 @@ nav
     height: 84px
 
 
-nav img 
+nav > img 
     padding: 0px 20px
     height: 100%
     width: auto
     /* mobile */
     // padding: 0px 30px
+    display: none
 
 
 nav img:nth-of-type(2) 
     transform: rotateY(180deg)
-    /* mobile */
-    display: none
 
 
 nav div
     flex: 1
     margin: auto 20px
+    /* mobile */
+    margin: 0
+    padding: 0 10px
+
+
+/* mobile */
+a#m-nav
+    height: 100%
+    padding: 0 15px
+    
+/* mobile */
+nav > a > img
+    height: 70px
+    float: right
+    padding-top: 5px
 
 
 nav ul 
@@ -72,10 +86,14 @@ nav h6
     color: #fff
     text-align: center
     /* mobile */
-    font-size: 32px
+    font-size: 26px
+    // font-family: 'Times New Roman', serif
+    // text-transform: uppercase
+    font-weight: 600
+    // text-align: left
 
 
-nav a 
+nav ul a 
     text-decoration: none
     color: #FFC99D
     font-family: 'Noto Sans KR', sans-serif
@@ -102,6 +120,8 @@ nav a:hover
     display: flex
     justify-content: center
     align-items: center
+    /* mobile */
+    width: 100%
 
 .splash:after 
     content: " "
@@ -206,6 +226,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     position: relative
     max-width: 860px
     min-width: 610px
+    /* mobile */
+    min-width: 0
+
 
 
 .slogan-box1 span 
@@ -555,6 +578,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     margin-bottom: 20px
     text-align: center
     color: #484848 //#ededed
+    /* mobile */
+    margin: 0
 
 .committed span 
     font-size: 46px
@@ -575,6 +600,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     border-top-color: #006464
     padding: 0px 200px
     padding-bottom: 50px
+    /* mobile */
+    padding: 0
 
 
 .section-footer 
