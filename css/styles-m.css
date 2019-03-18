@@ -18,7 +18,7 @@ nav {
   height: 42px;
   /* mobile */
   color: #fff;
-  height: 84px;
+  height: 60px;
 }
 
 nav > img {
@@ -26,12 +26,15 @@ nav > img {
   height: 100%;
   width: auto;
   /* mobile */
-  display: none;
+  padding: 0 10px;
+  height: 50px;
 }
 
 nav img:nth-of-type(2) {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  /* mobile */
+  display: none;
 }
 
 nav div {
@@ -47,14 +50,14 @@ nav div {
 /* mobile */
 a#m-nav {
   height: 100%;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 /* mobile */
 nav > a > img {
-  height: 70px;
+  height: 50px;
   float: right;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 nav ul {
@@ -101,7 +104,7 @@ nav h6 {
   color: #fff;
   text-align: center;
   /* mobile */
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
 }
 
