@@ -320,6 +320,10 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     height: 430px
     background-size: 100% 100%
     min-width: 1366px
+    /* mobile */
+    height: 468px
+    background-image: url(../images/map-m-light.png)
+    min-width: 360px
 
 
 .section-location h3 
@@ -336,6 +340,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     border-radius: 20px
     // border: 2px solid #0A7878
     box-shadow: -5px 10px 5px rgba(136, 136, 136, 0.5)
+    /* mobile */
+    max-width: 352px
 
 
 #map-marker-transition 
@@ -369,6 +375,13 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     flex-direction: column
     align-items: center
     text-align: center
+    /* mobile */
+    position: static
+    
+
+/* mobile */
+.location img
+    display: none
 
 
 .location h6 
@@ -377,6 +390,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     font-family: 'Montserrat', sans-serif
     font-size: 20px
     font-weight: 600
+    /* mobile */
+    font-size: 24px
+    // color: #EFEFEF
 
 
 // .shadow 
@@ -453,6 +469,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     display: flex
     flex-wrap: wrap
     justify-content: center
+    /* mobile */
+    justify-content: initial
+    margin: 0 20px
     
 
 
@@ -483,6 +502,10 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     margin-left: 20px
     margin-top: 20px
     padding-right: 10px
+
+/* mobile */
+.grid-classes a:nth-child(n+5)
+    display: none
 
 .grid-classes a:hover .grid-classes-icon
     margin-left: 10px
