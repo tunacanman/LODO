@@ -8,6 +8,7 @@ nav
     display: flex
     align-items: center
     position: fixed
+    top: 0
     z-index: 5
     width: 100%
     background-color: #8B1616
@@ -127,8 +128,9 @@ nav a:hover
     align-items: center
     /* mobile */
     width: 100%
-    height: 300px
-    padding-top: 60px
+    height: 370px
+    margin-top: 60px
+    align-items: flex-start
 
 .splash:after 
     content: " "
@@ -141,6 +143,8 @@ nav a:hover
     right: 0
     background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright.png")
     background-size: 100% 100%
+    /* mobile */
+    background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright-m2.png")
 
 
 .splash-child 
@@ -152,11 +156,13 @@ nav a:hover
     position: relative
     z-index: 2
     /* mobile */
-    $title-width-m: 75vw
+    $title-width-m: 85vw
     width: $title-width-m
-    height: $title-width-m / 3.2177827799662352279122115925718
+    height: $title-width-m / 2.24860210493 //2.7574371535 -m2 //3.2177827799662352279122115925718 -m
     background-size: cover
-    background-image: url("../images/title-outlines-m.svg")
+    background-image: url("../images/title-outlines-m3.svg")
+    // top: 10px
+    top: 55px
 
 
 // .splash-logo:nth-of-type(2) 
