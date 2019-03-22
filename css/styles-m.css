@@ -148,6 +148,7 @@ nav a:hover {
   /* mobile */
   width: 100%;
   height: 300px;
+  padding-top: 60px;
 }
 
 .splash:after {
@@ -170,9 +171,10 @@ nav a:hover {
   position: relative;
   z-index: 2;
   /* mobile */
-  width: 95vw;
-  height: 10.2vw;
+  width: 75vw;
+  height: 23.30797vw;
   background-size: cover;
+  background-image: url("../images/title-outlines-m.svg");
 }
 
 .splash h1 {
@@ -516,6 +518,20 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   color: #484848;
   letter-spacing: 1.5px;
   padding: 1px;
+  /* mobile */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 30px;
+}
+
+/* mobile */
+.section-classes .button {
+  margin-bottom: 20px;
 }
 
 .grid-classes {
@@ -534,6 +550,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
       -ms-flex-pack: initial;
           justify-content: initial;
   margin: 0 20px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .grid-classes div {
@@ -655,6 +674,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
           box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.4);
   margin: 0 auto;
   max-width: 90%;
+  /* mobile */
+  display: none;
 }
 
 .committed {
