@@ -128,9 +128,10 @@ nav a:hover
     align-items: center
     /* mobile */
     width: 100%
-    height: 370px
-    margin-top: 60px
-    align-items: flex-start
+    // height: 370px
+    height: 100vh
+    // margin-top: 60px
+    // align-items: flex-start
 
 .splash:after 
     content: " "
@@ -144,7 +145,7 @@ nav a:hover
     background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright.png")
     background-size: 100% 100%
     /* mobile */
-    background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright-m2.png")
+    background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright-m2-stroke.png")
 
 
 .splash-child 
@@ -158,11 +159,12 @@ nav a:hover
     /* mobile */
     $title-width-m: 85vw
     width: $title-width-m
-    height: $title-width-m / 2.24860210493 //2.7574371535 -m2 //3.2177827799662352279122115925718 -m
+    height: $title-width-m / 1.83377253621 //2.24860210493 -m3 //2.7574371535 -m2 //3.2177827799662352279122115925718 -m
     background-size: cover
-    background-image: url("../images/title-outlines-m3.svg")
+    background-image: url("../images/title-outlines-m4.svg")
     // top: 10px
-    top: 55px
+    // top: 55px
+    top: -15vh
 
 
 // .splash-logo:nth-of-type(2) 
@@ -579,6 +581,25 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     background-position: center -20px
     border-top-color: #9A0808 //#830000 //#A6A6A6 //#006464
     box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4) inset
+    /* mobile */
+    height: 400px
+    background-position: 0 30%
+    background-size: auto 180%
+    animation-name: side-scroll
+    animation-duration: 7s
+    animation-iteration-count: infinite
+    animation-timing-function: ease
+
+/* mobile */
+@keyframes side-scroll 
+    // 0%, 20% {background-position: 0 30%}
+    // 23% {background-position: 44% 30%}
+    // 24% {background-position: 36% 30%}
+    // 25%, 100% {background-position: 38% 30%}
+    0%, 20% {background-position: 0% 30%}
+    25%, 45% {background-position: 38% 30%}
+    50%, 70% {background-position: 70% 30%}
+    75%, 95% {background-position: 100% 30%}
 
 // .section-welcomed:after 
     // content: " "
