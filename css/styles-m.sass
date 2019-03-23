@@ -16,6 +16,7 @@ nav
     height: 42px
     /* mobile */
     height: 60px
+    flex-wrap: wrap
 
 
 nav > img 
@@ -47,6 +48,13 @@ a#m-nav
     height: 100%
     padding: 0 10px
     width: 76px
+    order: 10
+
+/* mobile */
+a#m-nav:hover ~ ul
+    display: initial
+    height: auto
+
     
 /* mobile */
 nav > a > img
@@ -66,16 +74,26 @@ nav ul
     height: 100%
     /* mobile */
     display: none
+    // position: absolute
+    flex-basis: 100%
+    background-color: #8B1616
+
 
 nav ul:first-of-type
     justify-content: flex-start
+    /* mobile */
+    order: 11
 
 nav ul:last-of-type
     justify-content: flex-end
+    /* mobile */
+    order: 12
 
 
 nav li 
     margin: auto 20px
+    /* mobile */
+    margin: 20px auto
 
 
 .active 
@@ -469,7 +487,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     /* mobile */
     display: flex
     flex-direction: column
-    padding-bottom: 30px
+    padding-bottom: 60px
+    padding-top: 30px
 
 /* mobile */
 .section-classes .button
@@ -714,11 +733,12 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 
 .section-footer 
     display: flex
-    flex-direction: row
     // height: 590px // fix 
     border-top-color: #830000
     border-top: none
     background-color: #fff
+    /* mobile */
+    flex-direction: column
 
 
 .footerA 
@@ -727,6 +747,7 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     background-size: cover
     background-position-y: 40%
     position: relative
+    height: 200px
 
 .footerA:after 
     content: " "
@@ -771,6 +792,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 
 .footerB span 
     font-size: 24px
+    /* mobile */
+    font-size: 26px
 
 
 .footerB h3 

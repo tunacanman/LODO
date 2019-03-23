@@ -19,6 +19,8 @@ nav {
   height: 42px;
   /* mobile */
   height: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 nav > img {
@@ -52,6 +54,15 @@ a#m-nav {
   height: 100%;
   padding: 0 10px;
   width: 76px;
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10;
+}
+
+/* mobile */
+a#m-nav:hover ~ ul {
+  display: initial;
+  height: auto;
 }
 
 /* mobile */
@@ -75,22 +86,35 @@ nav ul {
   height: 100%;
   /* mobile */
   display: none;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #8B1616;
 }
 
 nav ul:first-of-type {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  /* mobile */
+  -webkit-box-ordinal-group: 12;
+      -ms-flex-order: 11;
+          order: 11;
 }
 
 nav ul:last-of-type {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  /* mobile */
+  -webkit-box-ordinal-group: 13;
+      -ms-flex-order: 12;
+          order: 12;
 }
 
 nav li {
   margin: auto 20px;
+  /* mobile */
+  margin: 20px auto;
 }
 
 .active {
@@ -532,7 +556,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
+  padding-top: 30px;
 }
 
 /* mobile */
@@ -817,13 +842,14 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   border-top-color: #830000;
   border-top: none;
   background-color: #fff;
+  /* mobile */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footerA {
@@ -834,6 +860,7 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   background-size: cover;
   background-position-y: 40%;
   position: relative;
+  height: 200px;
 }
 
 .footerA:after {
@@ -887,6 +914,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 
 .footerB span {
   font-size: 24px;
+  /* mobile */
+  font-size: 26px;
 }
 
 .footerB h3 {
