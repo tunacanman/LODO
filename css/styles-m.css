@@ -148,7 +148,10 @@ nav a:hover {
           align-items: center;
   /* mobile */
   width: 100%;
-  height: 100vh;
+  height: 370px;
+  margin-top: 60px;
+  /* mobile */
+  background-image: url("../images/doberman_pinscher-cutout-v8-BG-d-dark.png");
 }
 
 .splash:after {
@@ -177,7 +180,7 @@ nav a:hover {
   height: 46.35253vw;
   background-size: cover;
   background-image: url("../images/title-outlines-m4.svg");
-  top: -15vh;
+  top: -10vh;
 }
 
 .splash h1 {
@@ -658,17 +661,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   -webkit-box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4) inset;
           box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4) inset;
   /* mobile */
-  height: 400px;
-  background-position: 0 30%;
-  background-size: auto 180%;
-  -webkit-animation-name: side-scroll;
-          animation-name: side-scroll;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  height: 200px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* mobile */
@@ -735,6 +730,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
       -ms-flex-pack: center;
           justify-content: center;
   height: 450px;
+  /* mobile */
+  height: auto;
+  padding: 60px 0;
 }
 
 .committed img {
@@ -756,6 +754,15 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* mobile */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* mobile */
+.column .button {
+  margin-bottom: 0;
 }
 
 .committed h3 {
@@ -767,11 +774,14 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   text-align: center;
   color: #484848;
   /* mobile */
-  margin: 0;
+  margin: 0 15px;
+  font-size: 20px;
 }
 
 .committed span {
   font-size: 46px;
+  /* mobile */
+  font-size: 30px;
 }
 
 .section-collage {
@@ -780,6 +790,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   background-size: 100%;
   border-top-color: #f0be65;
   padding-bottom: 39%;
+  /* mobile */
+  background-image: url(../images/collage-m.jpg);
+  padding-bottom: 169.5%;
 }
 
 .section-schedule {
