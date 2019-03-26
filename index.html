@@ -4,187 +4,208 @@
 	<meta charset='utf-8' />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Live Oak Dog Obedience</title>
-	<link rel="stylesheet" type="text/css" href="css/styles-m.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="css/styles-m.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 361px)" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Krub:400,500,600,700|Montserrat:400,500,600|Noto+Sans+KR|KoHo|Roboto+Slab" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- FullCalendar -->
-	<link href='css/fullcalendar.min.css' rel='stylesheet' />
-	<link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+	<link href='calendar/fullcalendar-4.0.1/packages/core/main.css' rel='stylesheet' />
+	<!-- mobile uses list view -->
+	<link href='calendar/fullcalendar-4.0.1/packages/list/main.css' rel='stylesheet' /> 
+	<!-- desktop uses calendar view -->
+	<link media="screen and (min-width: 361px)" href='calendar/fullcalendar-4.0.1/packages/daygrid/main.css' rel='stylesheet' />
 
 	<!-- qTip2 -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/qtip2/3.0.3/basic/jquery.qtip.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/qtip-overrides.css">
 
-	<link href="css/jquery-ui.theme.css" rel="stylesheet" />
-	<script src='js/moment.min.js'></script>
-	<!-- <script src='../lib/jquery.min.js'></script> -->
-	<script src='js/fullcalendar.min.js'></script>
+	<script src='calendar/fullcalendar-4.0.1/packages/core/main.js'></script>
+	<!-- mobile uses list view -->
+	<script src='calendar/fullcalendar-4.0.1/packages/list/main.js'></script>
+	<!-- desktop uses calendar view -->
+	<script src='calendar/fullcalendar-4.0.1/packages/daygrid/main.js'></script>
 	<script>
 
-	$(document).ready(function() {
+		document.addEventListener('DOMContentLoaded', function() {
+			var calendarEl = document.getElementById('calendar');
+	
+			// Added this function to be used to initialize calendar.defaultView
+			var viewBasedOnWidth = (function() {
+				var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+				if (w > 360) {
+					return 'dayGridMonth';
+				} else if (w <= 360) {
+					return 'listMonth';
+				}
+			})();
 
-		$('#calendar').fullCalendar({
-		themeSystem: 'jquery-ui',
-		defaultDate: '2019-01-12',
-		editable: false,
-		eventLimit: true, // allow "more" link when too many events
-		events: [
-			{
-			title: 'Beg. Obedience',
-			color: '#007B7B',
-			start: '2019-01-01T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Intermediate',
-			color: '#00A000',
-			start: '2019-01-01T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Puppy',
-			color: '#CD5D00',
-			start: '2019-01-01T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Tricks',
-			color: '#C10000',
-			start: '2019-01-01T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Advanced',
-			color: '#CDCD00',
-			start: '2019-01-02T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Social',
-			color: '#5B0789',
-			start: '2019-01-02T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Clicker',
-			color: '#16168F',
-			start: '2019-01-02T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Annual Fun',
-			color: '#B70037',
-			start: '2019-01-02T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'CGC',
-			color: '#53B700',
-			start: '2019-01-03T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Ask',
-			color: '#CD9A00',
-			start: '2019-01-03T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Flyball',
-			color: '#009633',
-			start: '2019-01-03T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Open Obedience',
-			color: '#CD2000',
-			start: '2019-01-03T16:30:00',
-			url: '#',
-			description: '<b>Class: </b>Beginning Obedience<br /> \
-						<b>Length: </b>6 weeks'
-			},
-			{
-			title: 'Long Event',
-			start: '2019-01-07',
-			end: '2019-01-10'
-			},
-			{
-			id: 999,
-			title: 'Repeating Event',
-			start: '2019-01-09T16:00:00'
-			},
-			{
-			id: 999,
-			title: 'Repeating Event',
-			start: '2019-01-16T16:00:00'
-			},
-			{
-			title: 'Conference',
-			start: '2019-01-11',
-			end: '2019-01-13'
-			},
-			{
-			title: 'Meeting',
-			start: '2019-01-12T10:30:00',
-			end: '2019-01-12T12:30:00'
-			},
-			{
-			title: 'Lunch',
-			start: '2019-01-12T12:00:00'
-			},
-			{
-			title: 'Meeting',
-			start: '2019-01-12T14:30:00'
-			},
-			{
-			title: 'Happy Hour',
-			start: '2019-01-12T17:30:00'
-			},
-			{
-			title: 'Dinner',
-			start: '2019-01-12T20:00:00'
-			},
-			{
-			title: 'Birthday Party',
-			start: '2019-01-13T07:00:00'
-			},
-			{
-			title: 'Click for Google',
-			url: 'http://google.com/',
-			start: '2019-01-28'
-			}
-		],
-		eventRender: function(event, element) {
-			element.qtip({
-			content: event.description
+			var calendar = new FullCalendar.Calendar(calendarEl, {
+				plugins: [ 'list', 'dayGrid' ],
+				defaultView: viewBasedOnWidth, 
+				windowResize: function(view) {
+					var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+					if (w > 360 && calendar.view.type != 'dayGridMonth') {
+						calendar.changeView('dayGridMonth');
+					} else if (w <= 360 && calendar.view.type != 'listMonth') {
+						calendar.changeView('listMonth');
+					}
+				},
+				defaultDate: '2019-01-12',
+				editable: false,
+				eventLimit: true, // allow "more" link when too many events
+				events: [
+					{
+					title: 'Beg. Obedience',
+					color: '#007B7B',
+					start: '2019-01-01T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Intermediate',
+					color: '#00A000',
+					start: '2019-01-01T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Puppy',
+					color: '#CD5D00',
+					start: '2019-01-01T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Tricks',
+					color: '#C10000',
+					start: '2019-01-01T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Advanced',
+					color: '#CDCD00',
+					start: '2019-01-02T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Social',
+					color: '#5B0789',
+					start: '2019-01-02T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Clicker',
+					color: '#16168F',
+					start: '2019-01-02T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Annual Fun',
+					color: '#B70037',
+					start: '2019-01-02T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'CGC',
+					color: '#53B700',
+					start: '2019-01-03T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Ask',
+					color: '#CD9A00',
+					start: '2019-01-03T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Flyball',
+					color: '#009633',
+					start: '2019-01-03T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Open Obedience',
+					color: '#CD2000',
+					start: '2019-01-03T16:30:00',
+					url: '#',
+					description: '<b>Class: </b>Beginning Obedience<br /> \
+								<b>Length: </b>6 weeks'
+					},
+					{
+					title: 'Long Event',
+					start: '2019-01-07',
+					end: '2019-01-10'
+					},
+					{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2019-01-09T16:00:00'
+					},
+					{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2019-01-16T16:00:00'
+					},
+					{
+					title: 'Conference',
+					start: '2019-01-11',
+					end: '2019-01-13'
+					},
+					{
+					title: 'Meeting',
+					start: '2019-01-12T10:30:00',
+					end: '2019-01-12T12:30:00'
+					},
+					{
+					title: 'Lunch',
+					start: '2019-01-12T12:00:00'
+					},
+					{
+					title: 'Meeting',
+					start: '2019-01-12T14:30:00'
+					},
+					{
+					title: 'Happy Hour',
+					start: '2019-01-12T17:30:00'
+					},
+					{
+					title: 'Dinner',
+					start: '2019-01-12T20:00:00'
+					},
+					{
+					title: 'Birthday Party',
+					start: '2019-01-13T07:00:00'
+					},
+					{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2019-01-28'
+					}
+				]
 			});
-		}
-		});
 
-	});
+			calendar.render();
+		});
 
 	</script>
 
