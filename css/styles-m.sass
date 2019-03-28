@@ -4,224 +4,15 @@
   box-sizing: border-box
 
 
-nav 
-    display: flex
-    align-items: center
-    position: fixed
-    top: 0
-    z-index: 5
-    width: 100%
-    background-color: #8B1616
-    border-color: #414141
-    height: 42px
-    /* mobile */
-    height: 60px
-    flex-wrap: wrap
-
-
-nav > img 
-    padding: 0px 20px
-    height: 100%
-    width: auto
-    /* mobile */
-    // padding: 0px 30px
-    padding: 0 10px
-    height: 45px
-
-
-nav img:nth-of-type(2) 
-    transform: rotateY(180deg)
-    /* mobile */
-    display: none
-
-
-nav div
-    flex: 1
-    margin: auto 20px
-    /* mobile */
-    margin: 0
-    padding: 0 10px
-
-
-/* mobile */
-a#m-nav
-    height: 100%
-    padding: 0 10px
-    width: 76px
-    order: 10
-
-/* mobile */
-a#m-nav:hover ~ ul
-    display: initial
-    height: auto
-
-    
-/* mobile */
-nav > a > img
-    height: 50px
-    padding-top: 4px
-    display: block
-    margin: 0 auto
-
-
-nav ul 
-    display: flex
-    flex: 1
-    // justify-content: center
-    list-style-type: none
-    margin: 0px
-    padding: 0
-    height: 100%
-    /* mobile */
-    display: none
-    // position: absolute
-    flex-basis: 100%
-    background-color: #8B1616
-
-
-nav ul:first-of-type
-    justify-content: flex-start
-    /* mobile */
-    order: 11
-
-nav ul:last-of-type
-    justify-content: flex-end
-    /* mobile */
-    order: 12
-
-
-nav li 
-    margin: auto 20px
-    /* mobile */
-    margin: 20px auto
-
-
-.active 
-    background-color: #414141
-    color: #FFC99D
-
-
-nav h6 
-    font-family: 'Montserrat', sans-serif
-    font-size: 16px
-    font-weight: 400
-    margin: 0
-    color: #fff
-    text-align: center
-    /* mobile */
-    font-size: 18px
-    // font-family: 'Times New Roman', serif
-    // text-transform: uppercase
-    font-weight: 600
-    // text-align: left
-    color: #FFD1AD
-
-
-nav ul a 
-    text-decoration: none
-    color: #FFC99D
-    font-family: 'Noto Sans KR', sans-serif
-    font-size: 20px
-    font-weight: 400
-    letter-spacing: 1px
-    height: 100%
-    display: flex
-
-
-nav a:hover 
-    background-color: #6b6b6b
-    color: #FFCFA8
-
-
-.splash 
-    position: relative
-    background-color: #808080
-    background-image: url("../images/doberman_pinscher-cutout-v8-BG-d.png")
-    background-repeat: no-repeat
-    background-size: cover
-    background-attachment: fixed
-    height: 100vh
-    display: flex
-    justify-content: center
-    align-items: center
-    /* mobile */
-    width: 100%
-    height: 370px
-    margin-top: 60px
-    // align-items: flex-start
-    /* mobile */
-    background-image: url("../images/doberman_pinscher-cutout-v8-BG-d-dark.png")
-
-.splash:after 
-    content: " "
-    z-index: 1
-    display: block
-    position: absolute
-    height: 100%
-    top: 0
-    left: 0
-    right: 0
-    background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright.png")
-    background-size: 100% 100%
-    /* mobile */
-    background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright-m2-stroke.png")
-
-
-.splash-child 
-    // display: flex
-    $title-width: 65vw
-    width: $title-width
-    height: $title-width / 9.313
-    background-image: url("../images/title-outlines.svg")
-    position: relative
-    z-index: 2
-    /* mobile */
-    $title-width-m: 85vw
-    width: $title-width-m
-    height: $title-width-m / 1.83377253621 //2.24860210493 -m3 //2.7574371535 -m2 //3.2177827799662352279122115925718 -m
-    background-size: cover
-    background-image: url("../images/title-outlines-m4.svg")
-    // top: 10px
-    // top: 55px
-    top: -10vh
-
-
-// .splash-logo:nth-of-type(2) 
-//     transform: rotateY(180deg)
-
-
-// .splash-logo 
-//     position: relative
-//     // transform: scale(0.7)
- 
-
-.splash h1 
-    align-self: center
-    padding: 0px 30px
-    font-family: 'Times New Roman', Times, serif
-    font-weight: 600
-    font-size: 54px
-    letter-spacing: 0.02em
-    //text-shadow: 2px 2px 0px #570000, 2px -2px 0px #570000, -2px 2px 0px #570000, -2px -2px 0px #570000
-
-.splash h3
-    color: #fff //#e5e5e5
-    font-size: 26px
-    font-weight: 300
-    margin: 5px 35px
-
-
 html, body 
     margin: 0
     font-family: sans-serif
-
 
 h1 
     font-family: 'Krub', sans-serif
     font-size: 72px
     font-weight: 500
     margin: 0
-
 
 h2, h3
     font-family: 'Montserrat', sans-serif
@@ -235,82 +26,214 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     border-top: 6px solid #484848
 
 
+nav 
+    display: flex
+    align-items: center
+    position: fixed
+    top: 0
+    z-index: 5
+    width: 100%
+    background-color: #8B1616
+    border-color: #414141
+    /* mobile */
+    height: 60px
+    flex-wrap: wrap
+
+nav > img 
+    /* mobile */
+    padding: 0 10px
+    height: 45px
+
+nav img:nth-of-type(2) 
+    transform: rotateY(180deg)
+    /* mobile */
+    display: none
+
+nav div
+    flex: 1
+    margin: auto 20px
+    /* mobile */
+    margin: 0
+    padding: 0 10px
+
+/* mobile */
+a#m-nav
+    height: 100%
+    padding: 0 10px
+    width: 76px
+    order: 10
+
+/* mobile */
+a#m-nav:hover ~ ul
+    display: initial
+    height: auto
+    
+/* mobile */
+a#m-nav > img
+    height: 50px
+    padding-top: 4px
+    display: block
+    margin: 0 auto
+
+nav ul 
+    flex: 1
+    list-style-type: none
+    margin: 0px
+    padding: 0
+    height: 100%
+    /* mobile */
+    display: none
+    flex-basis: 100%
+    background-color: #8B1616
+
+nav ul:first-of-type
+    justify-content: flex-start
+    /* mobile */
+    order: 11
+
+nav ul:last-of-type
+    justify-content: flex-end
+    /* mobile */
+    order: 12
+
+/* mobile */
+nav li 
+    margin: 20px auto
+
+.active 
+    background-color: #414141
+    color: #FFC99D
+
+nav h6 
+    font-family: 'Montserrat', sans-serif
+    margin: 0
+    text-align: center
+    /* mobile */
+    font-size: 18px
+    font-weight: 600
+    color: #FFD1AD
+
+nav ul a 
+    text-decoration: none
+    color: #FFC99D
+    font-family: 'Noto Sans KR', sans-serif
+    font-size: 20px
+    font-weight: 400
+    letter-spacing: 1px
+    height: 100%
+    display: flex
+
+nav a:hover 
+    background-color: #6b6b6b
+    color: #FFCFA8
+
+
+.splash 
+    position: relative
+    background-color: #808080
+    background-repeat: no-repeat
+    background-size: cover
+    background-attachment: fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    /* mobile */
+    width: 100%
+    height: 370px
+    margin-top: 60px
+    background-image: url("../images/doberman_pinscher-cutout-v8-BG-d-dark.png")
+
+.splash:after 
+    content: " "
+    z-index: 1
+    display: block
+    position: absolute
+    height: 100%
+    top: 0
+    left: 0
+    right: 0
+    background-size: 100% 100%
+    /* mobile */
+    background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright-m2-stroke.png")
+
+.splash-child 
+    position: relative
+    z-index: 2
+    /* mobile */
+    $title-width-m: 85vw
+    width: $title-width-m
+    height: $title-width-m / 1.83377253621 //2.24860210493 -m3 //2.7574371535 -m2 //3.2177827799662352279122115925718 -m
+    background-size: cover
+    background-image: url("../images/title-outlines-m4-redline.svg")
+    top: -10vh
+
+.splash h1 
+    align-self: center
+    padding: 0px 30px
+    font-family: 'Times New Roman', Times, serif
+    font-weight: 600
+    font-size: 54px
+    letter-spacing: 0.02em
+
+.splash h3
+    color: #fff //#e5e5e5
+    font-size: 26px
+    font-weight: 300
+    margin: 5px 35px
+
+
 .section-slogan 
     display: flex
-    height: 380px
     border-top-color: #f0be65
     /* mobile */
     flex-direction: column
     height: auto
 
-
 .slogan-box1 
     flex: 1
     display: flex
     align-items: center
-    // background-color: rgb(168, 29, 41) 
     background-color: #FFFEF7
     flex: 2 0 50%
     /* mobile */
     justify-content: center
 
-
 .slogan-box1 h3 
-    margin: 90px
     text-align: center
-    // color: rgb(255, 255, 255) 
-    // color: #232323
-    // font-family: 'Helvetica', serif 
     line-height: 60px
-    font-size: 28px
     font-weight: 400
-    padding: 30px
-    border-top: 2px solid #B7B7B7
-    border-bottom: 2px solid #B7B7B7
-    // text-transform: uppercase 
     position: relative
     max-width: 860px
-    min-width: 610px
     /* mobile */
-    min-width: 0
     padding: 40px 20px
     margin: 0
     border: none
     font-size: 18px
 
-
-
 .slogan-box1 span 
-    // font-size: 140% 
     font-weight: 600
     color: #AD2532 // 88000C
 
 .slogan-box1 img:first-of-type
     position: absolute
-    left: 30px
     /* mobile */
     left: -20px
 
 .slogan-box1 img:nth-of-type(2)
     position: absolute
-    right: 30px
-    bottom: 30px
     transform: rotateZ(180deg)
     /* mobile */
     right: -20px
     bottom: 30px
 
-
 .slogan-box2 
     flex: 0 2 40%
-    background-image: url("../images/slogan-e-cb-trans.png")
     background-size: 100%
     background-position: center 70%
     position: relative
     /* mobile */
     height: 298px
     background-image: url("../images/slogan-e-trans-mobile.jpg")
-
 
 // .slogan-box2:after 
 //     content: " "
@@ -323,11 +246,11 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 //     right: 0
 //     background-image: linear-gradient(to right, rgb(255, 254, 247), rgba(255, 255, 255, 0) 10%)
 
+
 #map-marker-container
     position: relative
     display: flex
     justify-content: center
-
 
 #section-location-container
     overflow: hidden
@@ -337,24 +260,16 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     border-top-color: #006464
     background-color: #dfd2ae
 
-
 .section-location 
     position: relative
     display: flex
     flex-direction: column
     align-items: center
-    // justify-content: center
-    // align-content: center
-    // justify-items: center 
-    background-image: url(../images/map-hires-crop.png)
-    height: 430px
     background-size: 100% 100%
-    min-width: 1366px
     /* mobile */
     height: 468px
     background-image: url(../images/map-m-light.png)
     min-width: 360px
-
 
 .section-location h3 
     font-family: 'Montserrat', sans-serif //'Krub'
@@ -365,20 +280,15 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     margin-top: 38px
     background-color: #BAD2D2 //#b8c3df //#a5b076
     padding: 5px 35px
-    // padding-top: 25px
-    // margin: 0
     border-radius: 20px
-    // border: 2px solid #0A7878
     box-shadow: -5px 10px 5px rgba(136, 136, 136, 0.5)
     /* mobile */
     max-width: 352px
-
 
 #map-marker-transition 
     position: absolute
     top: -65px
     z-index: 2
-
 
 @keyframes boing 
     0% 
@@ -398,9 +308,7 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     animation: boing 1.5s 1
     transform-origin: 50% 75%
 
-
 .location 
-    position: absolute
     display: flex
     flex-direction: column
     align-items: center
@@ -408,21 +316,17 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     /* mobile */
     position: static
     
-
 /* mobile */
 .location img
     display: none
-
 
 .location h6 
     margin: 0
     color: #88000C //#DE1426
     font-family: 'Montserrat', sans-serif
-    font-size: 20px
     font-weight: 600
     /* mobile */
     font-size: 24px
-    // color: #EFEFEF
 
 
 // .shadow 
@@ -430,41 +334,33 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 	//    -moz-box-shadow: 0 8px 6px -6px black
 	//         box-shadow: 0 8px 6px -6px black
  
-
 #glendora 
     top: 20.9%
     left: 19.4%
-
 
 #alta-loma 
     top: 20.9%
     left: 62.2%
 
-
 #la-verne 
     top: 39.5%
     left: 32.9%
-
 
 #claremont 
     top: 41.9%
     left: 41.7%
 
-
 #montclair 
     top: 55.1%
     left: 47.6%
-
 
 #upland 
     top: 41.9%
     left: 54.5%
 
-
 #ranchocuca 
     top: 39.5%
     left: 62.6%
-
 
 #diamond-bar 
     top: 77.9%
@@ -472,9 +368,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 
 
 .section-classes 
-    // display: flex
-    // flex-direction: column
-    // justify-content: center
     border-top-color: #f0be65
     background-color: #FAFAFA
     font-family: 'Krub', sans-serif
@@ -482,7 +375,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     font-weight: 600
     color: #484848
     letter-spacing: 1.5px
-    // padding: 0 10%
     padding: 1px
     /* mobile */
     display: flex
@@ -494,17 +386,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 .section-classes .button
     margin-bottom: 20px
 
-
 .grid-classes 
-    // margin: 0 155px
     margin: 0 75px
     margin-top: 42px
-    // display: grid
-    // grid-template-columns: auto
-    // grid-template-rows: auto
-    // grid-gap: 6px 114px
-    // justify-content: space-around
-    // justify-items: center
     display: flex
     flex-wrap: wrap
     justify-content: center
@@ -513,12 +397,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     margin: 0 20px
     order: 2
     
-
-
 .grid-classes div 
     display: flex
     align-items: center
-
 
 .grid-classes img 
     margin-right: 15px
@@ -539,7 +420,7 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     align-items: center
     width: 293px
     height: 69px
-    margin-left: 20px
+    margin: 0 auto
     margin-top: 20px
     padding-right: 10px
 
@@ -550,22 +431,11 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 .grid-classes a:hover .grid-classes-icon
     margin-left: 10px
     background-image: url(../images/dog-solid-red.png)
-    
-// .grid-classes a:hover img
-//     margin-left: 10px
 
 .grid-classes a:hover
     color: #830000 //#A64B00
     background-color: #F0F0F0 //#E7F4F4
     border-radius: 20px
-
-// .grid-classes #grid-firstCol
-//     grid-column-start: 1
-//     grid-row: 1 / 5
-    
-// .grid-classes #grid-lastCol
-//     grid-column-start: 5
-//     grid-row: 1 / 5
 
 
 .button 
@@ -582,7 +452,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     text-align: center
     margin: 45px auto
     display: block
-
 
 .button:hover 
     background-color: #9B9B9B //#C86411
@@ -603,12 +472,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4) inset
     /* mobile */
     height: 200px
-    // background-position: 0 30%
-    // background-size: auto 180%
-    // animation-name: side-scroll
-    // animation-duration: 7s
-    // animation-iteration-count: infinite
-    // animation-timing-function: ease
     box-shadow: none
 
 /* mobile */
@@ -634,13 +497,10 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     // background: rgba(0, 0, 0, 0.4)
  
 .section-welcomed h3 
-    // font-family: 'KoHo', sans-serif
-    // font-size: 38px
     font-size: 28px
     font-weight: 400
     color: #C83636 //#e5e5e5 
     line-height: 1.6em
-
 
 .welcomed 
     z-index: 2
@@ -650,9 +510,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     border-bottom-right-radius: 20px
     border-bottom-left-radius: 20px
     box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.4)
-    // position: relative
-    // top: 10px
-    // left: 10px
     margin: 0 auto
     max-width: 90%
     /* mobile */
@@ -662,9 +519,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 .committed 
     z-index: 3
     background-color: #ededed
-    // background-image: linear-gradient(to bottom right, #DAF5F5, #fff, #fff, #DAF5F5)
-    // background: linear-gradient(135deg, #FFBE89 0%,#ffffff 30%,#ffffff 63%,#FFBE89 100%)
-    // background-image: url("../images/3-3-m.png")
     color: #484848
     border-top-color: #006464 //#830000
     display: flex
@@ -679,7 +533,7 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     height: 100%
 
 .committed img:first-of-type
-    transform: rotateY(180deg) // rotateX(180deg)
+    transform: rotateY(180deg)
 
 .column
     display: flex
@@ -733,13 +587,11 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 
 .section-footer 
     display: flex
-    // height: 590px // fix 
     border-top-color: #830000
     border-top: none
     background-color: #fff
     /* mobile */
     flex-direction: column
-
 
 .footerA 
     flex: 1
@@ -747,21 +599,9 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     background-size: cover
     background-position-y: 40%
     position: relative
+    /* mobile */
     height: 200px
-
-.footerA:after 
-    content: " "
-    z-index: 1
-    display: block
-    position: absolute
-    height: 100%
-    top: 0
-    left: 0
-    right: 0
-    // background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%)
-
-
-
+    
 .footerB 
     flex: 1
     display: flex
@@ -771,7 +611,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     text-align: center
     padding-top: 50px
 
-
 .footerB h2 
     font-family: 'Krub', sans-serif
     font-size: 34px
@@ -780,21 +619,17 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     margin: 0
     margin-bottom: 15px
 
-
 .footerB h4 
     font-family: 'Montserrat', sans-serif
     font-size: 22px
     font-weight: 400
     color: #484848
-    // margin: 0
     margin-bottom: 15px
-
 
 .footerB span 
     font-size: 24px
     /* mobile */
     font-size: 26px
-
 
 .footerB h3 
     font-family: 'Montserrat', sans-serif
@@ -803,7 +638,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
     color: #A60000
     margin: 0
     margin-bottom: 15px
-
 
 .footerB p 
     font-size: 11px

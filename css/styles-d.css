@@ -1,0 +1,232 @@
+nav, .section-slogan, #section-location-container, .section-classes, .section-welcomed, .committed, .section-collage, .section-schedule, .section-footer {
+  border-top-width: 3px;
+}
+
+nav {
+  height: 42px;
+  -ms-flex-wrap: initial;
+      flex-wrap: initial;
+}
+
+nav > img {
+  padding: 0px 20px;
+  height: 100%;
+}
+
+nav img:nth-of-type(2) {
+  display: initial;
+}
+
+nav div {
+  margin: auto 20px;
+  padding: initial;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+a#m-nav {
+  display: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: initial;
+}
+
+nav ul:first-of-type {
+  -webkit-box-ordinal-group: initial;
+      -ms-flex-order: initial;
+          order: initial;
+}
+
+nav ul:last-of-type {
+  -webkit-box-ordinal-group: initial;
+      -ms-flex-order: initial;
+          order: initial;
+}
+
+nav li {
+  margin: auto 20px;
+}
+
+nav h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.splash {
+  height: 100vh;
+  background-image: url("../images/doberman_pinscher-cutout-v8-BG-d.png");
+  margin-top: 30px;
+}
+
+.splash:after {
+  background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright.png");
+}
+
+.splash-child {
+  width: 65vw;
+  height: 6.97949vw;
+  background-image: url("../images/title-outlines.svg");
+  background-size: initial;
+  top: 0;
+}
+
+.section-slogan {
+  height: 380px;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+}
+
+.slogan-box1 {
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+
+.slogan-box1 h3 {
+  margin: 90px;
+  font-size: 28px;
+  padding: 30px;
+  border-top: 2px solid #B7B7B7;
+  border-bottom: 2px solid #B7B7B7;
+  min-width: 610px;
+}
+
+.slogan-box1 img:first-of-type {
+  left: 30px;
+}
+
+.slogan-box1 img:nth-of-type(2) {
+  right: 30px;
+  bottom: 30px;
+}
+
+.slogan-box2 {
+  height: initial;
+  background-image: url("../images/slogan-e-cb-trans.png");
+}
+
+.section-location {
+  background-image: url(../images/map-hires-crop.png);
+  height: 430px;
+  min-width: 1366px;
+}
+
+.section-location h3 {
+  max-width: initial;
+}
+
+.location {
+  position: absolute;
+}
+
+.location img {
+  display: initial;
+}
+
+.location h6 {
+  font-size: 20px;
+}
+
+.section-classes {
+  padding: 1px;
+  display: initial;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+}
+
+.section-classes .button {
+  margin-bottom: 45px;
+}
+
+.grid-classes {
+  margin: 0 75px;
+  margin-top: 42px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-ordinal-group: initial;
+      -ms-flex-order: initial;
+          order: initial;
+}
+
+.grid-classes a:nth-child(n+5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-classes a {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.section-welcomed {
+  height: 640px;
+  -webkit-box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4) inset;
+          box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4) inset;
+}
+
+.welcomed {
+  display: initial;
+}
+
+.committed {
+  height: 450px;
+  padding: initial;
+}
+
+.column {
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+
+.column .button {
+  margin-bottom: 45px;
+}
+
+.committed h3 {
+  font-size: 30px;
+  margin: 50px 110px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+.committed span {
+  font-size: 46px;
+}
+
+.section-collage {
+  background-image: url(../images/collage2.jpg);
+  padding-bottom: 39%;
+}
+
+.section-schedule {
+  padding: 0px 200px;
+  padding-bottom: 50px;
+}
+
+.section-footer {
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+}
+
+.footerA {
+  height: initial;
+}
+
+.footerB span {
+  font-size: 24px;
+}
+/*# sourceMappingURL=styles-d.css.map */

@@ -3,6 +3,30 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: 'Krub', sans-serif;
+  font-size: 72px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  color: #484848;
+}
+
+nav, .section-slogan, #section-location-container, .section-classes, .section-welcomed, .committed, .section-collage, .section-schedule, .section-footer {
+  border-top: 3px solid #484848;
+  /* mobile */
+  border-top: 6px solid #484848;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,7 +40,6 @@ nav {
   width: 100%;
   background-color: #8B1616;
   border-color: #414141;
-  height: 42px;
   /* mobile */
   height: 60px;
   -ms-flex-wrap: wrap;
@@ -24,9 +47,6 @@ nav {
 }
 
 nav > img {
-  padding: 0px 20px;
-  height: 100%;
-  width: auto;
   /* mobile */
   padding: 0 10px;
   height: 45px;
@@ -66,7 +86,7 @@ a#m-nav:hover ~ ul {
 }
 
 /* mobile */
-nav > a > img {
+a#m-nav > img {
   height: 50px;
   padding-top: 4px;
   display: block;
@@ -74,9 +94,6 @@ nav > a > img {
 }
 
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -111,9 +128,8 @@ nav ul:last-of-type {
           order: 12;
 }
 
+/* mobile */
 nav li {
-  margin: auto 20px;
-  /* mobile */
   margin: 20px auto;
 }
 
@@ -124,10 +140,7 @@ nav li {
 
 nav h6 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   margin: 0;
-  color: #fff;
   text-align: center;
   /* mobile */
   font-size: 18px;
@@ -156,11 +169,9 @@ nav a:hover {
 .splash {
   position: relative;
   background-color: #808080;
-  background-image: url("../images/doberman_pinscher-cutout-v8-BG-d.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +185,6 @@ nav a:hover {
   width: 100%;
   height: 370px;
   margin-top: 60px;
-  /* mobile */
   background-image: url("../images/doberman_pinscher-cutout-v8-BG-d-dark.png");
 }
 
@@ -187,23 +197,19 @@ nav a:hover {
   top: 0;
   left: 0;
   right: 0;
-  background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright.png");
   background-size: 100% 100%;
   /* mobile */
   background-image: url("../images/doberman_pinscher-cutout-v8-doberman-leaves-bright-m2-stroke.png");
 }
 
 .splash-child {
-  width: 65vw;
-  height: 6.97949vw;
-  background-image: url("../images/title-outlines.svg");
   position: relative;
   z-index: 2;
   /* mobile */
   width: 85vw;
   height: 46.35253vw;
   background-size: cover;
-  background-image: url("../images/title-outlines-m4.svg");
+  background-image: url("../images/title-outlines-m4-redline.svg");
   top: -10vh;
 }
 
@@ -225,35 +231,10 @@ nav a:hover {
   margin: 5px 35px;
 }
 
-html, body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-h1 {
-  font-family: 'Krub', sans-serif;
-  font-size: 72px;
-  font-weight: 500;
-  margin: 0;
-}
-
-h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 34px;
-  color: #484848;
-}
-
-nav, .section-slogan, #section-location-container, .section-classes, .section-welcomed, .committed, .section-collage, .section-schedule, .section-footer {
-  border-top: 3px solid #484848;
-  /* mobile */
-  border-top: 6px solid #484848;
-}
-
 .section-slogan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 380px;
   border-top-color: #f0be65;
   /* mobile */
   -webkit-box-orient: vertical;
@@ -284,19 +265,12 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 }
 
 .slogan-box1 h3 {
-  margin: 90px;
   text-align: center;
   line-height: 60px;
-  font-size: 28px;
   font-weight: 400;
-  padding: 30px;
-  border-top: 2px solid #B7B7B7;
-  border-bottom: 2px solid #B7B7B7;
   position: relative;
   max-width: 860px;
-  min-width: 610px;
   /* mobile */
-  min-width: 0;
   padding: 40px 20px;
   margin: 0;
   border: none;
@@ -310,15 +284,12 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 
 .slogan-box1 img:first-of-type {
   position: absolute;
-  left: 30px;
   /* mobile */
   left: -20px;
 }
 
 .slogan-box1 img:nth-of-type(2) {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
   /* mobile */
@@ -330,7 +301,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   -webkit-box-flex: 0;
       -ms-flex: 0 2 40%;
           flex: 0 2 40%;
-  background-image: url("../images/slogan-e-cb-trans.png");
   background-size: 100%;
   background-position: center 70%;
   position: relative;
@@ -374,10 +344,7 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../images/map-hires-crop.png);
-  height: 430px;
   background-size: 100% 100%;
-  min-width: 1366px;
   /* mobile */
   height: 468px;
   background-image: url(../images/map-m-light.png);
@@ -468,7 +435,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
 }
 
 .location {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,7 +459,6 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   margin: 0;
   color: #88000C;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
   font-weight: 600;
   /* mobile */
   font-size: 24px;
@@ -621,7 +586,7 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
           align-items: center;
   width: 293px;
   height: 69px;
-  margin-left: 20px;
+  margin: 0 auto;
   margin-top: 20px;
   padding-right: 10px;
 }
@@ -860,18 +825,8 @@ nav, .section-slogan, #section-location-container, .section-classes, .section-we
   background-size: cover;
   background-position-y: 40%;
   position: relative;
+  /* mobile */
   height: 200px;
-}
-
-.footerA:after {
-  content: " ";
-  z-index: 1;
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .footerB {
