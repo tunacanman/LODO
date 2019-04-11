@@ -1,0 +1,45 @@
+.fc-toolbar h2 {
+  font-size: 34px;
+}
+
+.fc table {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fc-button {
+  border-radius: 19px;
+}
+
+.fc-button-primary {
+  background-color: #A60000;
+  border-color: #A60000;
+}
+
+button.fc-today-button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fc th {
+  padding: 6px;
+  padding-bottom: 2px;
+  background-color: #8B1616;
+  color: #f3f3f3;
+}
+
+.fc-unthemed th, .fc-unthemed thead, .fc-unthemed .fc-row, .fc-unthemed td.fc-head-container {
+  border-color: #8B1616;
+}
+
+.fc th, .fc td {
+  border-width: 2px;
+}
+
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+  float: left;
+}
+
+span.fc-day-number {
+  font-weight: 500;
+}
+/*# sourceMappingURL=fc-overrides.css.map */

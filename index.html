@@ -5,21 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Live Oak Dog Obedience</title>
 	<link rel="stylesheet" type="text/css" href="css/styles-m.css">
-	<link rel="stylesheet" type="text/css" media="screen and (min-width: 361px)" href="css/styles-d.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 501px)" href="css/styles-d.css">
 	<link href="https://fonts.googleapis.com/css?family=Krub:400,500,600,700|Montserrat:400,500,600|Noto+Sans+KR|KoHo|Roboto+Slab" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- FullCalendar -->
+	<!-- FullCalendar Styles -->
 	<link href='calendar/fullcalendar-4.0.1/packages/core/main.css' rel='stylesheet' />
 	<!-- mobile uses list view -->
 	<link href='calendar/fullcalendar-4.0.1/packages/list/main.css' rel='stylesheet' /> 
 	<!-- desktop uses calendar view -->
 	<link media="screen and (min-width: 361px)" href='calendar/fullcalendar-4.0.1/packages/daygrid/main.css' rel='stylesheet' />
+	<!-- overrides -->
+	<link href='calendar/fullcalendar-4.0.1/fc-overrides.css' rel='stylesheet' /> 
 
 	<!-- qTip2 -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/qtip2/3.0.3/basic/jquery.qtip.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/qtip-overrides.css">
 
+	<!-- FullCalendar -->
 	<script src='calendar/fullcalendar-4.0.1/packages/core/main.js'></script>
 	<!-- mobile uses list view -->
 	<script src='calendar/fullcalendar-4.0.1/packages/list/main.js'></script>
@@ -270,19 +273,31 @@
 	<nav>
 		<a id="m-nav"><img src="images/bars-solid-grey.svg"></a>
 		<img class="splash-logo" src="images/lodo-dog-rt-grey.svg" alt="logo of playful dog">
+		<div id="sm-screen-LODO">
+			<h5>LODO</h5>
+		</div>
 		<ul>
 			<a class="active" href="#"><li>HOME</li></a>
 			<a href="classes.html"><li>CLASSES</li></a>
 			<a href="schedule.html"><li>SCHEDULE</li></a>
 		</ul>
-		<div>
+		<div id="lg-screen-LODO">
 			<h6>Live&nbsp;Oak Dog&nbsp;Obedience</h6>
 		</div>
 		<ul>
 			<a href="about.html"><li>ABOUT</li></a>
 			<a href="contact.html"><li>CONTACT</li></a>
 		</ul>
-		<img class="splash-logo" src="images/lodo-dog-rt-grey.svg" alt="logo of playful dog">
+		<img class="splash-logo" src="images/lodo-dog-lt-grey.svg" alt="logo of playful dog">
+		<div id="dropdown">
+			<ul>
+				<a class="active" href="#"><li>HOME</li></a>
+				<a href="classes.html"><li>CLASSES</li></a>
+				<a href="schedule.html"><li>SCHEDULE</li></a>
+				<a href="about.html"><li>ABOUT</li></a>
+				<a href="contact.html"><li>CONTACT</li></a>
+			</ul>
+		</div>
 	</nav>
 	
 	<div class="splash">

@@ -46,6 +46,10 @@ nav {
       flex-wrap: wrap;
 }
 
+#sm-screen-LODO {
+  display: none;
+}
+
 nav > img {
   /* mobile */
   padding: 0 10px;
@@ -53,17 +57,14 @@ nav > img {
 }
 
 nav img:nth-of-type(2) {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
   /* mobile */
   display: none;
 }
 
-nav div {
+div#lg-screen-LODO {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: auto 20px;
   /* mobile */
   margin: 0;
   padding: 0 10px;
@@ -80,7 +81,7 @@ a#m-nav {
 }
 
 /* mobile */
-a#m-nav:hover ~ ul {
+a#m-nav:hover ~ div#dropdown {
   display: initial;
   height: auto;
 }
@@ -93,6 +94,14 @@ a#m-nav > img {
   margin: 0 auto;
 }
 
+div#dropdown {
+  display: none;
+  -webkit-box-ordinal-group: 12;
+      -ms-flex-order: 11;
+          order: 11;
+  width: 100%;
+}
+
 nav ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -102,10 +111,13 @@ nav ul {
   padding: 0;
   height: 100%;
   /* mobile */
-  display: none;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   background-color: #8B1616;
+}
+
+nav > ul {
+  display: none;
 }
 
 nav ul:first-of-type {
@@ -178,12 +190,10 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   /* mobile */
+  padding-top: 50px;
+  padding-bottom: 190px;
   width: 100%;
-  height: 370px;
   margin-top: 60px;
   background-image: url("../images/doberman_pinscher-cutout-v8-BG-d-dark.png");
 }
@@ -203,14 +213,12 @@ nav a:hover {
 }
 
 .splash-child {
-  position: relative;
   z-index: 2;
   /* mobile */
   width: 85vw;
   height: 46.35253vw;
   background-size: cover;
   background-image: url("../images/title-outlines-m4-redline.svg");
-  top: -10vh;
 }
 
 .splash h1 {
@@ -797,10 +805,13 @@ nav a:hover {
       -ms-flex-align: center;
           align-items: center;
   border-top-color: #006464;
-  padding: 0px 200px;
   padding-bottom: 50px;
   /* mobile */
   padding: 0;
+}
+
+#calendar {
+  width: 90%;
 }
 
 .section-footer {

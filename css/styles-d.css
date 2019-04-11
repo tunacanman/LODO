@@ -17,11 +17,10 @@ nav img:nth-of-type(2) {
   display: initial;
 }
 
-nav div {
+div#lg-screen-LODO {
   margin: auto 20px;
   padding: initial;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  min-width: 200px;
 }
 
 a#m-nav {
@@ -39,12 +38,19 @@ nav ul:first-of-type {
   -webkit-box-ordinal-group: initial;
       -ms-flex-order: initial;
           order: initial;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 nav ul:last-of-type {
   -webkit-box-ordinal-group: initial;
       -ms-flex-order: initial;
           order: initial;
+  min-width: 381px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 nav li {
@@ -61,6 +67,10 @@ nav h6 {
   height: 100vh;
   background-image: url("../images/doberman_pinscher-cutout-v8-BG-d.png");
   margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
 }
 
 .splash:after {
@@ -81,6 +91,7 @@ nav h6 {
   -webkit-box-direction: initial;
       -ms-flex-direction: initial;
           flex-direction: initial;
+  overflow: scroll;
 }
 
 .slogan-box1 {
@@ -211,7 +222,6 @@ nav h6 {
 }
 
 .section-schedule {
-  padding: 0px 200px;
   padding-bottom: 50px;
 }
 
@@ -228,5 +238,131 @@ nav h6 {
 
 .footerB span {
   font-size: 24px;
+}
+
+@media screen and (max-width: 1300px) {
+  nav img:nth-of-type(1) {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+  div#lg-screen-LODO {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  nav ul:first-of-type {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav ul:last-of-type {
+    min-width: initial;
+  }
+  nav ul {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  nav h6 {
+    text-align: initial;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  div#lg-screen-LODO {
+    display: none;
+    min-width: initial;
+  }
+  #sm-screen-LODO {
+    display: initial;
+    margin: 5px 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  #sm-screen-LODO h5 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: #f2f2f2;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav ul a {
+    font-size: 16px;
+  }
+  nav li {
+    margin: auto 10px;
+  }
+  .splash-child {
+    background-image: url(../images/title-outlines-m4-redline.svg);
+    width: 55vw;
+    height: 30vw;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav img:nth-of-type(2) {
+    display: none;
+  }
+  a#m-nav {
+    display: block;
+  }
+  a#m-nav > img {
+    height: 36px;
+    padding-top: 2px;
+  }
+  nav > ul {
+    display: none;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    background-color: #8B1616;
+  }
+  div#lg-screen-LODO {
+    display: block;
+  }
+  div#lg-screen-LODO h6 {
+    text-align: center;
+  }
+  #sm-screen-LODO {
+    display: none;
+  }
+  nav ul:first-of-type {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+  }
+  nav ul:last-of-type {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+  nav li {
+    margin: 20px auto;
+  }
+  ul:hover, ul:hover ~ ul {
+    display: initial;
+    height: auto;
+  }
+  div#dropdown ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 360px;
+    margin-left: auto;
+    background-color: #8B1616;
+  }
 }
 /*# sourceMappingURL=styles-d.css.map */
