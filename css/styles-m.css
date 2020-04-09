@@ -150,6 +150,11 @@ nav li {
   color: #FFC99D;
 }
 
+a.active:hover {
+  background-color: #414141;
+  color: #FFC99D;
+}
+
 nav h6 {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -306,9 +311,6 @@ nav a:hover {
 }
 
 .slogan-box2 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 2 40%;
-          flex: 0 2 40%;
   background-size: 100%;
   background-position: center 70%;
   position: relative;
@@ -357,6 +359,7 @@ nav a:hover {
   height: 468px;
   background-image: url(../images/map-m-light.png);
   min-width: 360px;
+  width: 100%;
 }
 
 .section-location h3 {
@@ -464,7 +467,7 @@ nav a:hover {
 }
 
 .location h6 {
-  margin: 0;
+  margin: 5px;
   color: #88000C;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -474,42 +477,42 @@ nav a:hover {
 
 #glendora {
   top: 20.9%;
-  left: 19.4%;
+  left: 23.4%;
 }
 
 #alta-loma {
   top: 20.9%;
-  left: 62.2%;
+  left: 66.2%;
 }
 
 #la-verne {
   top: 39.5%;
-  left: 32.9%;
+  left: 36.9%;
 }
 
 #claremont {
   top: 41.9%;
-  left: 41.7%;
+  left: 45.7%;
 }
 
 #montclair {
   top: 55.1%;
-  left: 47.6%;
+  left: 51.6%;
 }
 
 #upland {
   top: 41.9%;
-  left: 54.5%;
+  left: 58.5%;
 }
 
 #ranchocuca {
   top: 39.5%;
-  left: 62.6%;
+  left: 66.6%;
 }
 
 #diamond-bar {
   top: 77.9%;
-  left: 28.9%;
+  left: 32.9%;
 }
 
 .section-classes {
@@ -899,5 +902,90 @@ nav a:hover {
   width: 300px;
   color: #484848;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 360px) {
+  .slogan-box2 {
+    height: 265px;
+  }
+}
+
+#classesPg-section-grid {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+}
+
+.class-card {
+  -ms-flex-preferred-size: 340px;
+      flex-basis: 340px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 20px;
+  padding-top: 0;
+  color: #484848;
+}
+
+.class-card p {
+  line-height: 1.5em;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+img.card-pic {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+img.card-icon {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.card-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.class-card ul {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 500;
+  color: #3D93B3;
+  list-style-image: url("../images/bone-icon.png");
+  padding-left: 30px;
+}
+
+.class-card li {
+  line-height: 1.25em;
+  margin: 10px 0;
+}
+
+#classesPg-section-grid h3 {
+  font-size: 26px;
+  color: #171717;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+  margin: 18px 0;
+}
+
+@media screen and (min-width: 501px) {
+  #classesPg-section-grid {
+    margin-top: 42px;
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #classesPg-section-grid {
+    padding: 40px;
+  }
 }
 /*# sourceMappingURL=styles-m.css.map */

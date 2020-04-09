@@ -1,3 +1,7 @@
+Do I need a privacy/cookie disclaimer bc of Google Analytics?
+
+add hover drop down menu on Classes nav button
+
 for mobile splash title svg, it might look better to add character and line spacing on the subtitle, "Train with Love Since 1982" 
 
 print styles
