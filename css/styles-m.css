@@ -178,6 +178,20 @@ nav ul a {
   display: flex;
 }
 
+nav #contact {
+  text-decoration: none;
+  color: #ececec;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 20px;
+}
+
 nav a:hover {
   background-color: #6b6b6b;
   color: #FFCFA8;
@@ -1028,6 +1042,37 @@ ul.card-item {
   margin-top: 5px;
 }
 
+a.moreBtn {
+  background-color: #d63737;
+  border-radius: 0px 0px 14px 14px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+a.moreBtn:hover {
+  background-color: #727272;
+}
+
+a.lessInfo {
+  display: none;
+}
+
+p.longDescription {
+  display: none;
+}
+
+#classesPg-section-grid h3.comingSoon {
+  color: #c51b1b;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 #classesPg-section-grid h3 {
   font-size: 26px;
   color: #171717;
@@ -1061,6 +1106,11 @@ ul.card-item {
 
 .yellow {
   background-color: #ffc895;
+}
+
+.blue {
+  background-color: #b8d9ff;
+  background-color: #5e9fe9;
 }
 
 img#ears {
@@ -1111,6 +1161,41 @@ img#ears {
           order: -2;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 900px;
+}
+
+#bioCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#bioImage {
+  max-width: 450px;
+  margin: 10px;
+}
+
+#bioDescription {
+  max-width: 450px;
+  margin: 10px;
+  margin-top: 40px;
+  text-align: left;
 }
 
 #aboutPg-section-main h1 {
@@ -1137,6 +1222,78 @@ img#ears {
   font-weight: 400;
 }
 
+#aboutPg-testimonials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #be5151;
+  color: #fff;
+  text-align: center;
+  padding: 0 3%;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+#aboutPg-testimonials h1 {
+  font-size: 34px;
+}
+
+.testimonial {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #963838;
+  color: #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.testimonial p {
+  margin-bottom: 6px;
+}
+
+.quoteName {
+  font-size: 18px;
+  margin-top: 0px;
+  text-align: right;
+  color: #cccccc;
+}
+
+#schedPg-section-main {
+  background-color: #be5151;
+  color: #fff;
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 3%;
+  width: 100%;
+}
+
+#schedPg-section-main h1 {
+  font-size: 34px;
+  text-align: center;
+  padding: 15px 0;
+  padding-top: 40px;
+}
+
+#monthTabs {
+  margin: auto;
+}
+
+#monthTabs button {
+  background-color: #8d1818;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#monthTabs button:hover {
+  background-color: #7c7c7c;
+}
+
 @media screen and (min-width: 501px) {
   #classesPg-section-grid {
     margin-top: 42px;
@@ -1144,6 +1301,13 @@ img#ears {
   }
   #aboutPg-section-main {
     margin-top: 42px;
+  }
+  #schedPg-section-main {
+    margin-top: 42px;
+  }
+  .testimonial {
+    width: 80%;
+    max-width: 1000px;
   }
 }
 
