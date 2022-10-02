@@ -58,22 +58,115 @@
     </nav>
     
     <div id="schedPg-section-main">
-        <h1>Schedules</h1>
+        <h1>SCHEDULES</h1>
+		<span>2022</span>
         <div id="monthTabs">
-            <button id="btnFeb">February</button>
-            <button id="btnMar">March</button>
-            <button id="btnAprMay">April & May</button>
+            <button disabled>July <br><span class="noClass">No classes</span></button>
+            <button disabled>August <br><span class="noClass">No classes</span></button>
+            <button id="btnSep">September</button>
         </div>
-        <div id="schedFeb">
-
-        </div>
-        <div id="schedMay">
-
-        </div>
-        <div id="schedAprMay">
-            
+        <div id="schedSep" class="schedContainer">
+            <div class="item itemDate">
+				<h4>Friday, September 9</h4>
+				No class 9/23!<br>
+				5 Weeks<br>
+				Ends 10-14-22
+			</div>
+			<div class="item itemInfo">
+				<h4>UPLAND</h4>
+				<h4>PUPPY PRESCHOOL</h4>
+				<h4>$160</h4>
+				Registration Deadline 9/8. Call (909)&nbsp;931&#8209;4280 <br>
+				7:30 PM &#8209; 8:30 PM <br>
+				Magnolia Park 651 W. 15th St. <br>
+				Indoors in South Hall<br>
+				<br>
+				Sorry, no dogs first meeting. <br>
+				<br>
+				<a href="https://anc.apm.activecommunities.com/upland/activity/search?onlineSiteId=0&activity_select_param=2&activity_keyword=dog&viewMode=list" target="_blank">Register @ Upland Recs</a>
+			</div>
+            <div class="item itemDate">
+				<h4>Friday, September 9</h4>
+				No class 9/23!<br>
+				5 Weeks<br>
+				Ends 10&#8209;14&#8209;22
+			</div>
+			<div class="item itemInfo">
+				<h4>UPLAND</h4>
+				<h4>Beginner's Obedience</h4>
+				<h4>$160</h4>
+				Registration Deadline 9/8. Call (909)&nbsp;931&#8209;4280 <br>
+				6:30 PM &#8209; 7:30 PM <br>
+				Magnolia Park 651 W. 15th St. <br>
+				<br>
+				Sorry, no dogs first meeting. <br>
+				<br>
+				<a href="https://anc.apm.activecommunities.com/upland/activity/search?onlineSiteId=0&activity_select_param=2&activity_keyword=dog&viewMode=list" target="_blank">Register @ Upland Recs</a>
+			</div>
+            <div class="item itemDate">
+				<h4>Saturday, September 10</h4>
+				5 Weeks<br>
+				Ends 10&#8209;15&#8209;22
+			</div>
+			<div class="item itemInfo">
+				<h4>CLAREMONT</h4>
+				<h4>Beginner's Obedience</h4>
+				<h4>$165</h4>
+				Registration Deadline 9/9. Call (909)&nbsp;399&#8209;5490 <br>
+				9:00 AM &#8209; 10:00 AM <br>
+				Hughes Center 1700 Danbury Rd. <br>Meet by Basket Ball courts. <br>
+				<br>
+				Sorry, no dogs first meeting. <br>
+				<br>
+				<a href="https://apm.activecommunities.com/claremontrecreation/Activity_Search" target="_blank">Register @ Claremont Recs</a>
+			</div>
+            <div class="item itemDate">
+				<h4>Saturday, September 10</h4>
+				5 Weeks<br>
+				Ends 10&#8209;15&#8209;22
+			</div>
+			<div class="item itemInfo">
+				<h4>UPLAND</h4>
+				<h4>Beginner's Obedience</h4>
+				<h4>$160</h4>
+				Registration Deadline 9/8. Call (909)&nbsp;931&#8209;4280 <br>
+				10:30 AM &#8209; 11:30 AM <br>
+				Magnolia Park 651 W. 15th St. <br>
+				<br>
+				Sorry, no dogs first meeting. <br>
+				<br>
+				<a href="https://anc.apm.activecommunities.com/upland/activity/search?onlineSiteId=0&activity_select_param=2&activity_keyword=dog&viewMode=list" target="_blank">Register @ Upland Recs</a>
+			</div>
+            <div class="item itemDate">
+				<h4>Saturday, September 10</h4>
+				5 Weeks<br>
+				Ends 10&#8209;15&#8209;22
+			</div>
+			<div class="item itemInfo">
+				<h4>RANCHO CUCAMONGA</h4>
+				<h4>Beginner's Obedience</h4>
+				<h4>$165</h4>
+				Registration Deadline 9/9.<br>
+				12:00 PM &#8209; 1:00 PM <br>
+				Red Hill Community Park 7484 Vineyard Ave. <br>
+				Enter park 3rd driveway south of Baseline Rd. Turn right at stop sign into park. <br>
+				<br>
+				Sorry, no dogs first meeting. Bring chair and pen first meeting.<br>
+				<br>
+				<a href="https://anc.apm.activecommunities.com/cityofrc/activity/search/detail/15410?onlineSiteId=0&from_original_cui=true&locale=en-US" target="_blank">Register @ RCpark.com</a>
+				(909)&nbsp;477&#8209;2795
+			</div>
         </div>
     </div>
+	
+			<!-- <div class="itemCity"></div>
+			<div class="itemClass"></div>
+			<div class="itemPrice"></div>
+			<div class="itemRegiNote"></div>
+			<div class="itemTime"></div>
+			<div class="itemAddr"></div>
+			<div class="itemNote"></div>
+			<div class="itemCityLink"></div> -->
 
 	<div class="section-footer">
 		<!-- <img class="footerA" width="680px" height="510px" src="images/footer.jpg"> -->
@@ -91,5 +184,14 @@
 	</div>
 
 </body>
+
+<script>
+    $(document).ready(function(){
+      $("#btnSep").click(function(){
+        $("#schedSep").css("display", "grid");
+		$("#btnSep").css("outline", "4px solid #FFC99D")
+      });
+    });
+</script>
 
 </html>
